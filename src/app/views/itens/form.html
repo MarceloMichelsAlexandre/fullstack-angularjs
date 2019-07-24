@@ -10,10 +10,32 @@
         >
         </ui-input>
         <ui-input
+          msg-class="muted"
+          ng-model="vm.record.referencia"
+          label="Referência"
+        >
+        </ui-input>
+        <ui-input
           ng-model="vm.record.valor"
           type="number"
           label="Valor"
         ></ui-input>
+        <div class="form-group form-inline">
+          <select style="width: 88%;" ng-model="vm.cor" class="form-control" ng-options="c.descricao for c in vm.cores"></select>
+          </select>
+          <button ng-disabled="!vm.cor" ng-click="vm.incluirCor()" class="btn btn-success" style="margin-left: 2%;">Incluir</a>
+        </div>
+        <ui-table cols="vm.cols" data="vm.coresAdicionados">
+            <actions>
+              <button
+                ng-click="vm.removerCor($parent.$rec)"
+                class="btn btn-sm btn-danger"
+                type="button"
+              >
+                Remover
+              </button>
+            </actions>
+          </ui-table>
         <button ng-click="vm.save()" type="button" class="btn btn-primary">
           <span ng-show="!vm._id">Salvar Registro</span>
           <span ng-show="vm._id">Atualizar Registro</span>

@@ -9,12 +9,22 @@ export default class MenuController {
       {
         state: "app.cliente",
         icon: "icon-users",
-        name: "Clientes"
+        name: "clientes"
       },
       {
         state: "app.item",
         icon: "icon-shopping-cart",
         name: "Itens"
+      },
+      {
+        state: "app.cor",
+        icon: "icon-file",
+        name: "Cores"
+      },
+      {
+        state: "app.pedido",
+        icon: "icon-file",
+        name: "Pedidos"
       },
       {
         state: "app.os",

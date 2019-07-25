@@ -6,7 +6,7 @@ export const pedidoConfig = $stateProvider => {
     .state("app.pedido", {
       template: require("@views/default.html"),
       url: "pedidos",
-      redirectTo: "app.pedido"
+      redirectTo: "app.pedido.list"
     })
     .state("app.pedido.list", {
       template: require("@views/pedidos/list.html"),

@@ -16,13 +16,13 @@
         Buscar
       </button>
     </form>
-    <a class="btn btn-outline-info" ui-sref="app.os.new">Novo registro</a>
+    <a class="btn btn-outline-info" ui-sref="app.pedido.new">Novo registro</a>
   </nav>
   <ui-table cols="vm.cols" data="vm.records">
     <actions>
       <a
         class="btn btn-sm btn-success"
-        ui-sref="app.os.edit({id: $parent.$rec._id})"
+        ui-sref="app.pedido.edit({id: $parent.$rec._id})"
         >Editar</a
       >
       <button

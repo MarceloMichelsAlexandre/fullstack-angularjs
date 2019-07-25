@@ -6,7 +6,7 @@ export const corConfig = $stateProvider => {
     .state("app.cor", {
       template: require("@views/default.html"),
       url: "cores",
-      redirectTo: "app.cor"
+      redirectTo: "app.cor.list"
     })
     .state("app.cor.list", {
       template: require("@views/cores/list.html"),

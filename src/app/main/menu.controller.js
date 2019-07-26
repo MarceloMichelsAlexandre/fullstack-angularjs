@@ -17,11 +17,6 @@ export default class MenuController {
         name: "Itens"
       },
       {
-        state: "app.cor",
-        icon: "icon-file",
-        name: "Cores"
-      },
-      {
         state: "app.pedido",
         icon: "icon-file",
         name: "Pedidos"

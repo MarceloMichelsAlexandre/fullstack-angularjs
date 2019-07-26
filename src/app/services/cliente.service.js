@@ -32,7 +32,7 @@ export default class ClienteService {
 
   update(registro) {
     return this.http
-      .put(this.url + "/" + registro._id)
+      .put(this.url + "/" + registro._id, registro)
       .then(function(response) {
         return response.data;
       });
